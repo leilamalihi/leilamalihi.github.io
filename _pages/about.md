@@ -15,7 +15,7 @@ Can you realize which one is real?
 ======
 ![Real Or Synthetic](/images/wound.png)
 
-- In this figure, the left one is real and the right one is synthetic. That is so amazing,I know :wink: I guss you could't realize that. But We generated such thoes Images.
+- In this figure, the left one is real and the right one is synthetic. That is so amazing, I guss you could't realize that :wink:. But --We generated such thoes Images.
 - In [ZIEL project](https://www.hs-osnabrueck.de/ziel/aktuelles/#c12675179), we generated 100,000 wound Images using [StyleGan3](https://nvlabs.github.io/stylegan3/)
 
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
