@@ -19,7 +19,7 @@ This is the front page of a website that is powered by the [academicpages templa
 - In [ZIEL project](https://www.hs-osnabrueck.de/ziel/aktuelles/#c12675179), we generated 100,000 wound Images using [StyleGan3](https://nvlabs.github.io/stylegan3/). [(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/37203538/)                                                                                     
 
 
-How AI realize the Wound part?
+How AI detect the Wound part?:thinking:
 ======
  ![Real Or Synthetic](/images/Sc.png)
 *Detecting the wound part by Xception model and segment that by Gradcam*
