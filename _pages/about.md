@@ -28,7 +28,7 @@ Can AI detect the Wound part?
  - One possible approach gaining insights is to use gradient class activation mapping (Grad-CAM).[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
  
  
-# Dataset related to the age group of children
+# Do you need a dataset for children?
 ![Real Or Synthetic](/images/face.png)
 *Some images of Labeld Children in the Wild [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- ) face dataset*
 
