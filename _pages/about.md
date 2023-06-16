@@ -18,6 +18,8 @@ Can you realize the real one?
 - In this figure, the left one is real and the right one is synthetic. That is so amazing, I guss you could't realize that :wink:. But we generated such thoes Images.
 - In [ZIEL project](https://www.hs-osnabrueck.de/ziel/aktuelles/#c12675179), we generated 100,000 wound Images using [StyleGan3](https://nvlabs.github.io/stylegan3/). [(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/37203538/)
 
+
+
 Detecting the wound part (Grad Cam)
 ======
  ![Real Or Synthetic](/images/Sc.png){width=200%}
