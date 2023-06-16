@@ -24,8 +24,8 @@ Can AI detect the Wound part?
  ![Real Or Synthetic](/images/Sc.png)
          *Detecting the wound part by Xception model*
 
- - Deep-Neural networks like the xception model are highly complex and are considered black boxes.
- - One possible approach gaining insights is to use gradient class activation mapping (Grad-CAM).[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
+ - Using Xception model the wound part detected.
+ - By Grad-cam hilighted the wound part.[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
  
  
 # LCW: a dataset for children
