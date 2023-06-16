@@ -30,7 +30,7 @@ Can AI detect the Wound part?
  
 # LCW a dataset for children
 ![Real Or Synthetic](/images/face.png)
-*Some images of Labeld Children in the Wild [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- ) face dataset*
+*Some images of Labeld Children in the Wild (LCW) face dataset*
 
 - You can not access to a  public child face dataset?
 - Your dataset is noisy? 
