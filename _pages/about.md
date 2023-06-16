@@ -31,7 +31,12 @@ Can AI detect the Wound part?
  
 
 
-#Dataset related to the age group of children
+# Dataset related to the age group of children
+![Real Or Synthetic](/images/face.png)
+*Some images of Labeld Children in the Wild (LCW) face [dataset](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3-)*
+
+- There are several databases according to age, but the main drawback is the noisy labels because most of them are collected semi-automatically. 
+- Among this dataset, the dataset related to the age group of children is very few.
 
 
 
