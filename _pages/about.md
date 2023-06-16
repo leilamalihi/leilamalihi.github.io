@@ -15,7 +15,7 @@ This is the front page of a website that is powered by the [academicpages templa
 
 ![Real Or Synthetic](/images/ww.png)
 
-- I guss you could't realize that. In this figure, the **left** one is **real** and the **right** one is **synthetic**. We generated such thoes Images.
+- I guss you could't realize that. In this figure, the *left* one is *real* and the *right* one is *synthetic*. We generated such thoes Images.
 - In [ZIEL project](https://www.hs-osnabrueck.de/ziel/aktuelles/#c12675179), we generated 100,000 synthetic wound Images using [StyleGan3](https://nvlabs.github.io/stylegan3/). [(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/37203538/)                                                                                     
 
 
