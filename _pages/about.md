@@ -34,7 +34,7 @@ Can AI detect the Wound part?
 
 - There are several databases according to age, but the main drawback is the noisy labels because most of them are collected semi-automatically. 
 - Among this dataset, the dataset related to the age group of children is very few.
-- In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) project which was research project in cooperation between the Institute of Cognitive Science at the University of Osnabrück and the net-Com AG, we propose a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features a more challenging (high variance) visual domain for modern face recognition solutions.
+- In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) we proposed a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features a more challenging (high variance) visual domain for modern face recognition solutions.
 
 
 
