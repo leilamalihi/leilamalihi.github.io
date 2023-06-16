@@ -18,16 +18,16 @@ This is the front page of a website that is powered by the [academicpages templa
 - I guss you could't realize that. In this figure, the *left* one is *real* and the *right* one is *synthetic*. We generated such thoes Images.
 - In [ZIEL project](https://www.hs-osnabrueck.de/ziel/aktuelles/#c12675179), we generated 100,000 synthetic wound Images using [StyleGan3](https://nvlabs.github.io/stylegan3/). [(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/37203538/)                                                                                     
 
-
+---
 Can AI detect the Wound part?
 ======
  ![Real Or Synthetic](/images/Sc.png)
          *Detecting the wound part by Xception model*
 
  - Using Xception model the wound part detected.
- - By Grad-cam marked the wound part.[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
+ - The wound part marked by Grad-cam marked .[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
  
- 
+ ---
 # LCW: a dataset for children
 ![Real Or Synthetic](/images/face.png)
 *Some images of LCW dataset*
@@ -38,7 +38,7 @@ Can AI detect the Wound part?
 - Use the [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- ) child face dataset
 - In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) project, we proposed a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features a more challenging (high variance) for modern face recognition solutions and freely available.
 
-
+---
 
 Getting started
 ======
