@@ -13,7 +13,6 @@ This is the front page of a website that is powered by the [academicpages templa
 
 # Can you realize the real one?
 
-======
 ![Real Or Synthetic](/images/ww.png)
 
 - In this figure, the left one is real and the right one is synthetic. That is so amazing, I guss you could't realize that:wink:. But we generated such thoes Images.
