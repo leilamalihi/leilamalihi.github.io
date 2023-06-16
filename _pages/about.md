@@ -25,7 +25,8 @@ Detecting the wound part (Grad Cam)
 *Detecting the wound part by Xception model and segment that by Gradcam*
 
 
- Deep neural networks like the xception model are highly complex and are considered black boxes, and understanding them is hard. One possible approach gaining insights is to use gradient class activation mapping (Grad-CAM).[Refer to my paper](https://pubmed.ncbi.nlm.nih.gov/35773863/)
+ - Deep neural networks like the xception model are highly complex and are considered black boxes, 
+ - One possible approach gaining insights is to use gradient class activation mapping (Grad-CAM).[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
  
  
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
