@@ -16,7 +16,7 @@ This is the front page of a website that is powered by the [academicpages templa
 ![Real Or Synthetic](/images/ww.png)
 
 - I guss you could't realize that. In this figure, the **left** one is **real** and the **right** one is **synthetic**. We generated such thoes Images.
-- In [ZIEL project](https://www.hs-osnabrueck.de/ziel/aktuelles/#c12675179), we generated 100,000 wound Images using [StyleGan3](https://nvlabs.github.io/stylegan3/). [(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/37203538/)                                                                                     
+- In [ZIEL project](https://www.hs-osnabrueck.de/ziel/aktuelles/#c12675179), we generated 100,000 synthetic wound Images using [StyleGan3](https://nvlabs.github.io/stylegan3/). [(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/37203538/)                                                                                     
 
 
 Can AI detect the Wound part?
@@ -25,7 +25,7 @@ Can AI detect the Wound part?
          *Detecting the wound part by Xception model*
 
  - Using Xception model the wound part detected.
- - By Grad-cam hilighted the wound part.[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
+ - By Grad-cam marked the wound part.[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
  
  
 # LCW: a dataset for children
