@@ -32,9 +32,11 @@ Can AI detect the Wound part?
 ![Real Or Synthetic](/images/face.png)
 *Some images of Labeld Children in the Wild [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- ) face dataset*
 
-- There are several databases according to age, but the main drawback is the noisy labels because most of them are collected semi-automatically. 
-- Among this dataset, the dataset related to the age group of children is very few.
-- In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) we proposed a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features a more challenging (high variance) visual domain for modern face recognition solutions.
+- You can not access to a  public child face dataset?
+- Your child face dataset is noisy? 
+- you need more identities
+- I propose to use the [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- ) child face dataset
+- In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) we proposed a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features a more challenging (high variance) visual domain for modern face recognition solutions and freely available.
 
 
 
