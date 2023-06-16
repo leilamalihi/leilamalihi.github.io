@@ -24,19 +24,17 @@ Can AI detect the Wound part?
  ![Real Or Synthetic](/images/Sc.png)
          *Detecting the wound part by Xception model*
 
-
  - Deep-Neural networks like the xception model are highly complex and are considered black boxes.
  - One possible approach gaining insights is to use gradient class activation mapping (Grad-CAM).[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
  
  
-
-
 # Dataset related to the age group of children
 ![Real Or Synthetic](/images/face.png)
-*Some images of Labeld Children in the Wild [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- )face dataset*
+*Some images of Labeld Children in the Wild [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- ) face dataset*
 
 - There are several databases according to age, but the main drawback is the noisy labels because most of them are collected semi-automatically. 
 - Among this dataset, the dataset related to the age group of children is very few.
+- In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) project which was research project in cooperation between the Institute of Cognitive Science at the University of Osnabrück and the net-Com AG, we propose a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features a more challenging (high variance) visual domain for modern face recognition solutions
 
 
 
