@@ -22,7 +22,7 @@ This is the front page of a website that is powered by the [academicpages templa
 How AI detect the Wound part?:thinking:
 ======
  ![Real Or Synthetic](/images/Sc.png)
-         *'Detecting the wound part by Xception model'*
+         ´*Detecting the wound part by Xception model*´
 
 
  - Deep neural networks like the xception model are highly complex and are considered black boxes, 
