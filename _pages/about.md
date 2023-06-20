@@ -25,12 +25,12 @@ This is the front page of a website that is powered by the [academicpages templa
  ![Real Or Synthetic](/images/Sc.png)
          *Detecting the wound part by Xception model*
 
- - Using Xception model the wound part detected.
+ - Using deep neural Xception model, the wound part detected.
  - The wound part marked by Grad-cam.[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
  
  ---
  .
-# LCW: a dataset for children
+# LCW: a dataset for children 
 ![Real Or Synthetic](/images/face.png)
 *Some images of LCW dataset*
 
