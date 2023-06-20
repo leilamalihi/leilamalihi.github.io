@@ -42,10 +42,9 @@ This is the front page of a website that is powered by the [academicpages templa
 - We use a model that was pre-trained on [VGGFace]( https://www.robots.ox.ac.uk/~vgg/software/vgg_face/) and fine-tune its weights by training on our dataset [(Refer to my paper)](/files/face_recognition_of_children__India_2_.pdf)
 
 # Malaria parasite detection
-
-
 ![Real Or Synthetic](/images/ma4.png)
-  *Extracting red blood cell mask, left image is blood cell image stained with Giemsa, the right one is after segmentation *
+*Extracting red blood cell mask, left is the blood cell image, right one is after segmentation*
+
 - A method to detect malaria parasite in blood samples stained with giemsa.
 - Most of malaria parasites exist in red blood cells.
 - At the first step, the red blood cell mask is extracted.
