@@ -48,9 +48,10 @@ This is the front page of a website that is powered by the [academicpages templa
 - A method to detect malaria parasite in blood samples stained with giemsa.
 - Most of malaria parasites exist in red blood cells.
 - At the first step, the red blood cell mask is extracted.
-- Color histogram, granulometry, gradient and flat texture features are extracted 
-Getting started
-======
+- Color histogram, granulometry, gradient and flat texture features are extracted
+- Different classifires and combination methods applied [(Refer to my paper)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6780011)
+
+
 [![Watch the video](image_url)](video_url)
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
