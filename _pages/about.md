@@ -44,7 +44,10 @@ This is the front page of a website that is powered by the [academicpages templa
 # Malaria parasite detection
 
 
-![Real Or Synthetic](/images/ma2.png){: .align-left width="300px"}
+![Real Or Synthetic](/images/ma2.png){: .callout}
+.callout {
+    float: right;
+}
 ![Real Or Synthetic](/images/ma2.png){: .align-right width="300px"}
 - A method to detect malaria parasite in blood samples stained with giemsa.
 - Most of malaria parasites exist in red blood cells.
