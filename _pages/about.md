@@ -43,7 +43,7 @@ This is the front page of a website that is powered by the [academicpages templa
 
 # Malaria parasite detection
 ![Real Or Synthetic](/images/ma4.png)
-*Extracting red blood cell mask, left is the blood cell image, right one is after segmentation*
+*Extracting red blood cell mask, left is the blood cell image, right is red blood cell mask*
 
 - A method to detect malaria parasite in blood samples stained with giemsa.
 - Most of malaria parasites exist in red blood cells.
