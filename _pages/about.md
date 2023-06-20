@@ -26,7 +26,7 @@ This is the front page of a website that is powered by the [academicpages templa
          *Detecting the wound part by Xception model*
 
  - Using Xception model the wound part detected.
- - The wound part marked by Grad-cam marked .[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
+ - The wound part marked by Grad-cam.[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
  
  ---
  .
@@ -37,8 +37,8 @@ This is the front page of a website that is powered by the [academicpages templa
 - You can not access to a  public child face dataset?
 - Your dataset is noisy? 
 - You need more identities
-- Use the [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- ) child face dataset
-- In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) project, we proposed a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features a more challenging (high variance) for modern face recognition solutions and freely available.
+- Use the [(LCW)](https://drive.google.com/drive/folders/1eHmgUfvix0bE7zg9ezY8joOv39r_4o3- ) dataset
+- In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) project, we proposed a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features are more challenging (high variance) for modern face recognition solutions and freely available.[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
 
 ---
 
