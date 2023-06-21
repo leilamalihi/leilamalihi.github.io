@@ -10,9 +10,11 @@ redirect_from:
 
 Since 2020, I am research associate in Osnabrück university. Here we had two nice projects about [Wound detection](https://www.hs-osnabrueck.de/ziel/aktuelles/#c12675179) and [Face recognition](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html). From 2013-2020, I was lecturer  at the Payame Noor University and University of Applied Science and Technology, which I had different courses like: Electronic, Image processing, Signal and system,Linear control, Electronic Labs and... . My master was Electrical engineering and my interest fields of research are deep learning, knowledge distillation, transfer learning, Feature visualization,  Machin learning and medical image processing. 
 
-## Teaching in Osnabrück university:
+## Teaching:
+### Osnabrück university:
 - [Advanced topics in deep learning](https://studip.uni-osnabrueck.de/dispatch.php/course/details?sem_id=c21b3925f0d09d3728af693ab7dd0f14)
-- [Machine learning](https://studip.uni-osnabrueck.de/dispatch.php/course/overview?cid=ff107954b4b912f57d81178d4c339413) 
+- [Machine learning](https://studip.uni-osnabrueck.de/dispatch.php/course/overview?cid=ff107954b4b912f57d81178d4c339413)
+
 
 
 # Can you realize the real one?
