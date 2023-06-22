@@ -14,7 +14,7 @@ yielded an F1-score of 0.85 on the cropped and 0.70 on the full images. This stu
 shows promising results. However, the model must be extended in terms of wound
 images and wound types for application in clinical practice. '
 date: 2022-10-01
-venue: 'nternational Conference on Informatics, Management, and 	Technology in Healthcare (ICIMTH)'
+venue: 'International Conference on Informatics, Management, and 	Technology in Healthcare (ICIMTH)'
 paperurl: 'https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI220717'
 citation: 'Malihi. L., Hüsers. J.. (2022). &quot;Automatic Wound Type Classification with Convolutional 	Neural Networks.&quot; <i>International Conference on Informatics, Management, and 	Technology in Healthcare (ICIMTH)</i>. 1(3).'
 ---
