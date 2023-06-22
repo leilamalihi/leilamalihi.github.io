@@ -4,8 +4,7 @@ main:
     url: /files/CV Leila Malihi-research 4 without number (8).pdf
     
   - title: "Publications"
-    url: /publications/2010-10-01-paper-title-number-2.md
-
+    url: /publications/
   - title: "Talks"
     url: /talks/    
 
