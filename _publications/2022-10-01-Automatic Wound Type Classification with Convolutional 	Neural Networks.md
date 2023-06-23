@@ -15,11 +15,11 @@ shows promising results. However, the model must be extended in terms of wound
 images and wound types for application in clinical practice. '
 date: 2022-10-01
 venue: 'International Conference on Informatics, Management, and 	Technology in Healthcare (ICIMTH)'
-paperurl: 'https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI220717'
+paperurl: 'https://pubmed.ncbi.nlm.nih.gov/35773863/'
 citation: 'Malihi. L., Hüsers. J.. (2022). &quot;Automatic Wound Type Classification with Convolutional 	Neural Networks.&quot; <i>International Conference on Informatics, Management, and 	Technology in Healthcare (ICIMTH)</i>. 1(3).'
 ---
 This paper is about the number 3. The number 4 is left for future work.
 
-[Download paper here](https://ebooks.iospress.nl/pdf/doi/10.3233/SHTI220717)
+[Download paper here](https://pubmed.ncbi.nlm.nih.gov/35773863/)
 
 Recommended citation: Malihi. L., Hüsers. J.. (2022). "Automatic Wound Type Classification with Convolutional 	Neural Networks" <i> International Conference on Informatics, Management, and 	Technology in Healthcare (ICIMTH)</i>. 1(3).
