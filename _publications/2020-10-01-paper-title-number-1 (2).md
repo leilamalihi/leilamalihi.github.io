@@ -16,7 +16,7 @@ several implantable applications.'
 date: 2020-10-01
 venue: '10th International Conference
 on Information Technology'
-paperurl: 'http://academicpages.github.io/files/paper.pdf'
+paperurl: 'http://leilamalihi.github.io/files/paper.pdf'
 citation: 'Your Name, You. (2009). &quot;Design of wide band Microstrip-line-fed antenna with circular
 polarization at ISM band for biomedical applications, 10th International Conference
 on Information Technology&quot; <i>10th International Conference
@@ -32,7 +32,7 @@ lower return loss, perfect impedance matching, and better gain. The 3-dB axial r
 antenna possesses the return loss of -29 dB at 2.4GHz. Thus the proposed antenna can be employed for
 several implantable applications.
 
-[Download paper here](http://academicpages.github.io/files/paper.pdf)
+[Download paper here](http://leilamalihi.github.io/files/paper.pdf)
 
 Recommended citation: Your Name, You. (2009). "Design of wide band Microstrip-line-fed antenna with circular
 polarization at ISM band for biomedical applications, 10th International Conference
