@@ -19,7 +19,7 @@ into two classes: parasitic and nonparasitic. Then, classifier fusion was done u
 Adaboost, and bagging.
 Results: Using six classifiers separately, the highest accuracy was obtained 92% using the k-NN classifier. The highest accuracy of the
 classifiers' fusion was obtained using the Adaboost algorithm with 95.5% success rate.'
-date: 2013-10-01
+date: 2015-10-01
 venue: 'Jundishapur journal of health sciences'
 paperurl: 'https://brieflands.com/articles/jjhs-15009.pdf'
 citation: 'Malihi. L., Ansari-Asl. K., Behbahani.. (2013). &quot;Improvement in Classification Accuracy
