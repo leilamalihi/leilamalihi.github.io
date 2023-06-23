@@ -16,7 +16,7 @@ the proposed antenna are the simple yet efficient design of the
 radiator, a 3-dB axial-ratio operating band with a compact size.'
 date: 2018-10-01
 venue: '5th international conference on information technology'
-paperurl: 'http://academicpages.github.io/files/confrance.pdf'
+paperurl: 'http://leilamalihi.github.io/files/confrance.pdf'
 citation: 'Malihi. R.,Malihi. L., Noorinia.J.. (2018). &quot;New monopole planar implant antenna for
 medical application.&quot; <i>5th international conference on information technology</i>. 1(1).'
 ---
@@ -31,7 +31,7 @@ aperture size 20 × 20 mm2, fabricated on FR4 substrate with
 dielectric constant of 4.4, thickness of 1 mm. The advantages of
 the proposed antenna are the simple yet efficient design of the
 radiator, a 3-dB axial-ratio operating band with a compact size.
-[Download paper here](http://academicpages.github.io/files/confrance.pdf)
+[Download paper here](http://leilamalihi.github.io/files/confrance.pdf)
 
 Recommended citation: Malihi. R.,Malihi. L., Noorinia.J. . (2018). "New monopole planar implant antenna for
 medical application." <i>5th international conference on information technology</i>. 1(1).
