@@ -17,7 +17,7 @@ processing within a tail of unproductive layers is different, depending on the t
 date: 2023-12-01
 venue: 'Journal of Applied Research in Electrical
 Engineering'
-paperurl: 'leilamalihi.github.io/files/papermat.pdf'
+paperurl: 'http://leilamalihi.github.io/files/papermat.pdf'
 citation: 'Richter M.L, Malihi. L, Windler, A.K.P., Krumnack. U. (2023). &quot;Analyzing the Inference
 Process in Deep Convolutional Neural Networks using Principal Eigenfeatures,
 Saturation and Logistic Regression Probes.&quot; <i>Journal of Applied Research in Electrical
@@ -33,7 +33,7 @@ saturation patterns during training, showing that saturation patterns emerge ear
 allows for quick detection of problems and potentially decreased cycle time during experiments. We also demonstrate
 that the emergence of tail patterns is independent of the capacity of the networks. Finally, we show that information
 processing within a tail of unproductive layers is different, depending on the topology of the neural network architecture.
-[Download paper here](leilamalihi.github.io/files/papermat.pdf)
+[Download paper here](http://leilamalihi.github.io/files/papermat.pdf)
 
 Recommended citation: Richter M.L, Malihi. L, Windler, A.K.P., Krumnack. U. (2023). "Analyzing the Inference
 Process in Deep Convolutional Neural Networks using Principal Eigenfeatures,
