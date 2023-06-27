@@ -3,7 +3,7 @@ title: "Design of wide band Microstrip-line-fed antenna with circular
 polarization at ISM band for biomedical applications, 10th International Conference
 on Information Technology"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/2020-10-01-paper-title-number-1(2) 
 excerpt: 'In this paper, a new wide band Micro strip antenna for implantable biomedical application in the
 frequency of ISM (industrial, scientific and medical) band (2.4–2.48 GHz) is presented. The total size
 of the proposed antenna is
