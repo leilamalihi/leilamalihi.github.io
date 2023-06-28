@@ -34,7 +34,7 @@ There are several textbooks available that cover these topics in detail. Some po
 - "Microelectronic Circuits" by Adel S. Sedra and Kenneth C. Smith.
 - "Electronic Principles" by Albert Malvino and David Bates.
 
-These books provide comprehensive coverage of electronic physics, including the topics mentioned above, along with practical examples, circuit diagrams, and exercises to reinforce the concepts.[Certificate](/files/payam)
+These books provide comprehensive coverage of electronic physics, including the topics mentioned above, along with practical examples, circuit diagrams, and exercises to reinforce the concepts.[Certificate](/files/payam.jpg)
 
 
 ## Electrical Measurement topics
