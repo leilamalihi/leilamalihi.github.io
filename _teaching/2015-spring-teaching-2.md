@@ -283,8 +283,4 @@ In this example inter- and intra cluster variance varies together with the numbe
 Moreover, the outcome of K-Means is a local minima, depending on the random initialization of the cluster centers. This local minimal may not be the global optimum.
 <!-- #endregion -->
 
-Heading 2
-======
 
-Heading 3
-======
