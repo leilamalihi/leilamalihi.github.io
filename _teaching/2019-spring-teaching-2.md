@@ -1,5 +1,5 @@
 ---
-title: "Matlab"
+title: "Matlab Programming"
 collection: teaching
 type: "Matlab "
 permalink: /teaching/2019-spring-teaching-2
