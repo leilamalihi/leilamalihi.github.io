@@ -130,9 +130,7 @@ Hint: you may consider using the function `scipy.spatial.distance.cdist`. Consul
     ### END SOLUTION
 
 
-```
 
-<!-- #region nbgrader={"grade": false, "grade_id": "cell-1aa3a155692767cb", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
 
 
 ## c) Linkage criteria
@@ -191,7 +189,7 @@ Note that for performance reasons the code differs from the lecture's pseudocode
 ```
 
 
-# Assignment 3: Kmeans Clustering (5 points)
+# Assignment 3: Kmeans Clustering
 <!-- #endregion -->
 
 <!-- #region nbgrader={"grade": false, "grade_id": "cell-b0db1893cc822d0c", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
@@ -269,110 +267,9 @@ It is not even clear, that the steps of the algorithm do decrease (is it possibl
 <!-- #endregion -->
 
 <!-- #region nbgrader={"grade": false, "grade_id": "3", "locked": true, "schema_version": 3, "solution": false} -->
-# Assignment 4: k-means Clustering (6 points)
 
-## a) Implement k-means clustering. Plot the results for $k = 7$ and $k = 3$ in colorful scatter plots.
+  
 
-How could one handle situations when one or more clusters end up containing 0 elements? Handle these situtation in your code.
-<!-- #endregion -->
-
-```{python nbgrader={'grade': True, 'grade_id': '3_code', 'locked': False, 'points': 5, 'schema_version': 3, 'solution': True}}
-import numpy as np
-import matplotlib.pyplot as plt
-
-from scipy.spatial.distance import cdist
-
-def kmeans(data, k=3):
-    """
-    Applies kmeans clustering to the data using k initial clusters.
-    data is expected to be a numpy array of size n*2, 
-    n being the amount of observations in the data. This function returns
-    the centroids and the labels for the clusters data (1,1,3,5,5,5,...)
-    
-    Args:
-        data (ndarray): 2-dimensional numpy array
-        k (int): Number of clusters
-    
-    Returns:
-        labels (ndarray): Numpy array containing numbers (=labels) with the same order as the data points
-        centroids(ndarray): vector representation of cluster centers of shape k*2
-    """
-    ### BEGIN SOLUTION
-    # Initial centroids are k random samples from the data.
-    centroids = data[np.random.randint(0, data.shape[0], k)]
-    old_centroids = np.zeros(centroids.shape)
-    
-    # Initial labels are all.. something.
-    labels = np.ndarray(data.shape[0])
-    
-    # Lets keep count of our iterations to avoid infinite loops.
-    iterations = 0
-    
-    while np.any(np.abs(centroids - old_centroids) > np.finfo(float).eps) and iterations < 1000:
-        # Keep count of iterations and remember current centroids for change calculation.
-        iterations += 1
-        # Copy the centroids and keep them for break condition check.
-        old_centroids = np.copy(centroids)
-        
-        # Calculate new labels. Labels are the index of their minimal distance to any centroid.
-        labels = np.argmin(cdist(centroids, data), axis=0)
-        
-        # Update centroids using the new cluster labels.
-        for label in range(k): 
-            # Check for empty clusters.
-            if np.any(labels == label):
-                # Cluster is not empty, move its centroid to new mean.
-                centroids[label, :] = np.mean(data[labels == label], axis=0)
-            else:
-                # Cluster is empty, set its centroid to the furthest outlier.
-                blacksheep = np.argmax(cdist(centroids, data), axis=0)
-                centroids[label, :] = data[blacksheep, :]
-    
-    ### END SOLUTION
-
-    return labels, centroids
-```
-
-```{python}
-# %matplotlib inline
-
-data = np.loadtxt('clusterData.txt')
-
-# Test experiments with a different number of clusters and different 
-# number of runs here.
-# You can define the number of clusters and how often k-means is called
-# allowing to investigate the inlfuenece of the number of clusters and 
-# of the different random cluster initializations per run.
-print(data.shape)
-
-# Experiment 1: One run with k=2
-experiment = ((2,1),)
-# Experiment 2: One run with k=3, one run with k=7
-#experiment = ((3,1),(7,1))
-# Experiment 3: Five run with k=7
-#experiment = ((7,5),)
-
-
-for params in  experiment:
-    k = params[0]
-    for i in range(1, params[1]+1):
-        labels, centroids = kmeans(data, k)
-        
-        assert isinstance(labels, np.ndarray), "'labels' should be a numpy array!"       
-        assert isinstance(centroids, np.ndarray), "'centroids' should be a numpy array!"    
-        assert labels.shape==(data.shape[0],), "Each data point needs a label!"
-        assert centroids.shape==(k,data.shape[1]), ("k centroids with the same dimensionality "
-            "as the data are needed!")
-        
-        kmeans_fig = plt.figure('k-means with k={}, i={}'.format(k,i))
-        plt.scatter(data[:,0], data[:,1], c=labels)
-        plt.scatter(centroids[:,0], centroids[:,1], 
-                    c=list(set(labels)), alpha=.1, marker='o',
-                    s=np.array([len(labels[labels==label]) for label in set(labels)])*100)
-        plt.title('k = {}, i = {}'.format(k, i))
-        kmeans_fig.canvas.draw()
-        plt.show()   
-```
 
 <!-- #region nbgrader={"grade": false, "grade_id": "cell-fa945b11f93016c4", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
 ## b) Why might the clustering for k=7 not look optimal? 
