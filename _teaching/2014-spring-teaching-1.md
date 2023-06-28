@@ -12,7 +12,7 @@ In this lecture we took a closer look at selected topics in deep learning with a
 
 Transfer Learning
 ======
-You can see the slides [here](Breadcrumbsleilamalihi.github.io/files
+You can see the slides [here](leilamalihi.github.io/files
 /transfer learning (1).pdf)
 
 Similarity learning
