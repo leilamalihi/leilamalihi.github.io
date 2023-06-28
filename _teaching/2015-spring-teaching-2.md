@@ -133,9 +133,9 @@ Hint: you may consider using the function `scipy.spatial.distance.cdist`. Consul
 
 
 
-## c) Linkage criteria
+## d) Linkage criteria
 
-In the following you find implementations for single- and complete-linkage clustering. Take a look at the code  and answer the question posted below. You may of course change parameters and try it out on different datasets (`points.txt` & `clusterData.txt` are provided).
+In the following you find implementations for single- and complete-linkage clustering. 
 
 Note that for performance reasons the code differs from the lecture's pseudocode (ML-05 Slide 8), but in general it does the same.
 <!-- #endregion -->
