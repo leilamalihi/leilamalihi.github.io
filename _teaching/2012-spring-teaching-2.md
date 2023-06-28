@@ -1,11 +1,11 @@
 ---
 title: "Electronic & Electrical Measurement"
 collection: teaching
-type: "Machine learning "
+type: "Electronic"
 permalink: /teaching/2012-spring-teaching-2
-venue: "Osnabrück university, Cognitive sceince, Computer vision group"
+venue: "Payamenur university,Electronic"
 date: 2017-01-01
-location: "Osabrück, Germany"
+location: "Lorestan, Iran"
 ---
 
 
@@ -13,18 +13,18 @@ location: "Osabrück, Germany"
 
 - An introduction to electronic physics
 
-- junction diode
+- junction diode:
 The properties and characteristics of a junction diode are discussed, including the formation of the depletion region, forward and reverse biasing, I-V characteristics, and applications of diodes.
-- Diode circuits
+- Diode circuits:
 This topic explores different diode circuits and their applications. It covers rectifiers, clippers, clampers, voltage multipliers, and voltage regulators.
 
-- Bipolar junction transistor
+- Bipolar junction transistor:
 The principles of operation, transistor construction, and various configurations (common emitter, common base, common collector) are covered. Topics include transistor characteristics, DC biasing, load line analysis, and small-signal models.
 - Design of transistor bias circuits
 This topic focuses on biasing techniques for transistors to establish proper operating points. It covers fixed bias, emitter bias, voltage divider bias, and stability considerations.
-- Low frequency transistor amplifiers
+- Low frequency transistor amplifiers:
 This topic explores the design and analysis of low-frequency transistor amplifiers. It covers single-stage amplifiers (common emitter, common base, common collector), amplifier characteristics, and frequency response.
-- Field effect transistor
+- Field effect transistor:
 The principles of operation, FET types (JFET, MOSFET), and their characteristics are discussed. Topics include FET biasing, FET amplifiers, and FET applications.
 
 These topics provide a foundation in electronic physics and lay the groundwork for understanding more advanced concepts in electronic devices and circuits. They form the basis for further studies in fields such as integrated circuits, digital electronics, analog electronics, and communication systems.
@@ -51,7 +51,7 @@ These books provide comprehensive coverage of electronic physics, including the 
 
 - Frequency Measurement: This topic explores techniques for measuring the frequency of signals, such as using frequency counters, oscilloscopes, or digital multimeters. It covers the principles of frequency measurement, different measurement methods, and considerations for accurate frequency measurements.
 
--Power Measurement: This topic covers methods for measuring electrical power, including measurements of active power (Watts), reactive power (VARs), and apparent power (VA). It may include discussions on power meters, power factor measurement, and power measurement in AC circuits.
+- Power Measurement: This topic covers methods for measuring electrical power, including measurements of active power (Watts), reactive power (VARs), and apparent power (VA). It may include discussions on power meters, power factor measurement, and power measurement in AC circuits.
 
 - Temperature Measurement: This topic discusses techniques for measuring temperature using various sensors, such as thermocouples, resistance temperature detectors (RTDs), and thermistors. It covers the principles of temperature measurement, calibration methods, and considerations for accurate temperature measurements.
 
