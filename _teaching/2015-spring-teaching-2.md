@@ -1,11 +1,11 @@
 ---
 title: "Machine learning"
 collection: teaching
-type: "taeching Practice section"
+type: "Teaching Practice section"
 permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+venue: "Osnabrück university, Cognitive sceince, Computer vision group"
+date: 2023-01-01
+location: "Osabrück, Germany"
 ---
 
 In this course, we had different topics in machine learning:
@@ -116,10 +116,6 @@ Hint: you may consider using the function `scipy.spatial.distance.cdist`. Consul
     ### END SOLUTION
 
 
-def d_centroid(cluster1, cluster2):
-    """
-    Calculate the distance between the centroids of two clusters.
-    
     Args:
         cluster1 (ndarray): Points belonging to cluster 1 of shape (num_points, num_dimensions).
         cluster2 (ndarray): Points belonging to cluster 1 of shape (num_points, num_dimensions).
@@ -134,155 +130,11 @@ def d_centroid(cluster1, cluster2):
     ### END SOLUTION
 
 
-x = np.array([[1,2,3], [4,5,6], [7,8,9]])
-y = np.array([[13,14,15], [16,17,18], [19,20,21]])
-z = np.array([[-2,0], [-1,100]])
-w = np.array([[2,0], [1,100], [1,-100], [1,-20]])
-
-epsilon = 1e-3
-assert abs(d_centroid(x, y) - 20.785) < epsilon, "Result is not correct: {}".format(d_centroid(x, y))
-assert abs(d_centroid(z, w) - 55.069) < epsilon, "Result is not correct: {}".format(d_centroid(z, w))
-assert d_centroid(x, y) == d_centroid(y, x), "X,Y is not equal to Y,X: {} != {}".format(d_centroid(x, y), d_centroid(y, x)) 
 ```
 
 <!-- #region nbgrader={"grade": false, "grade_id": "cell-1aa3a155692767cb", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
 
- ## Hierarchical Clustering
- 
- Consider the following matrix of distances
- 
-|       |  a  |  b  |  c  |  d  |  e  |
-|-------|-----|-----|-----|-----|-----|
-| **a** |  0  |  2  |  6  |  10 |  9  |
-| **b** |  2  |  0  |  5  |  9  |  8  |
-| **c** |  6  |  5  |  0  |  4  |  5  |
-| **d** |  10 |  9  |  4  |  0  |  3  |
-| **e** |  9  |  8  |  5  |  3  |  0  |
- 
-<!-- #endregion -->
 
-<!-- #region nbgrader={"grade": false, "grade_id": "cell-178fda94686d02f5", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
-## a) Perform agglomerative clustering
-
-Do *agglomerative* average linkage clustering by hand (i.e. employing the *mean* cluster distance). Analyze how many alternatives you have to consider at each step.
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": true, "grade_id": "cell-1b175c45344ce687", "locked": false, "points": 2, "schema_version": 3, "solution": true, "task": false} -->
-Given a set $C$ with cardinality $|n|$ we start with $n$ singleton sets, our initiaial clusters, and then have $\tfrac12 n(n-1)$ options to join two of theses cluster to form a new one: in our example we could pair $a$ with any of the 4 other elements $b,c,d,e$, or $b$ with ony of the elements $c,d,e$, or $c$ with either $d$ or $e$, or $d$ with $e$, that is $\tfrac12\cdot5\cdot(5-1)=10$ possible pairs. 
-
-A simple heuristic is to always merge clusters with the smallest inter-cluster distance (the most similar clusters) according to the cluster distance $d_{mean}$. In our case, in the first step this will be the clusters $\{a\}$ and $\{b\}$ with $d_{mean}(\{a\},\{b\})=2$ (as for singleton sets, the average distance is just the object distance, given in the matrix). 
-
-To proceed further, we have to update our distance matrix to contain the new cluster:
- 
-|             |  $\{a,b\}$ |  $\{c\}$  |  $\{d\}$  |  $\{e\}$ |
-|-------------|------------|-----------|-----------|----------|
-| **{a,b}**   |  $0.0$     |  $5.5$    |  $9.5$    |  $8.5$   |
-| **c**       |  $5.5$     |  $0.0$    |  $4.0$    |  $5.0$   |
-| **d**       |  $9.5$     |  $4.0$    |  $0.0$    |  $3.0$   |
-| **e**       |  $8.5$     |  $5.0$    |  $3.0$    |  $0.0$      |
-
-Now use this matrix to continue the process: the smallest distance is between $\{d\}$ and $\{e\}$, so these to clusters are merged to a new cluster $\{d,e\}$ and the cluster distance matrix has to be updated accordingly:
-
-|               |  $\{a,b\}$ |  $\{c\}$  |  $\{d,e\}$  |
-|---------------|------------|-----------|-------------|
-| **{a,b}**     |  $0.0$     |  $5.5$    |  $9.0$      |
-| **{c}**       |  $5.5$     |  $0.0$    |  $4.5$      |
-| **{d,e}**     |  $9.0$     |  $4.5$    |  $0.0$      |
-
-Now the smallest distance is between clusters $\{c\}$ and $\{d,e\}$, and joining these cluster and updating the distance matrix yields:
-
-|             |  $\{a,b\}$   |  $\{c,d,e\}$  |
-|-------------|--------------|---------------|
-| **{a,b}**   |  $0.0$       |  $7.83$       |
-| **{c,d,e}** |  $7.83$      |  $0.0$        |
-
-So in total wie get the following dendrogram
-
-
-                        {a,b,c,d,e}
-                            | 7.83
-               +------------+-------------+
-               |                          |
-               |                       {c,d,e}
-               |                          | 4.5
-               |                 +--------+---------+
-               |                 |                  |
-               |                 |                {d,e}
-               |                 |                  | 3.0
-             {a,b}               |             +----+----+
-               | 2.0             |             |         |
-        +------+------+          |             |         |
-        |             |          |             |         |
-       {a}           {b}        {c}           {d}       {e}
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": false, "grade_id": "cell-f0e512db6f3b50fc", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
-## b) Perform divisive clustering
-
-Now try to do divisive average linkage clustering. Again, analyze how many splits are possible in the first step? Think of a strategy that allows to reduce this number and use this in your computation. Then apply the strategy to obtain a hierarchical clustering, that is, iteratively split clusters until all clusters are singletons.
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": true, "grade_id": "cell-273971298318f089", "locked": false, "points": 2, "schema_version": 3, "solution": true, "task": false} -->
-Having a set $C$ of cardinality $|C|=n$, there are in total $2^{n-1}-1$ possibilities to split it into two non-empty sets $A$ and $B$: each element of $C$ can either be assigned to $A$ or to $B$ giving $2^n$ possible ways of assigning elements of $C$ to $A$ and $B$. This number includes symmetric cases (e.g. "AABAB" is equivalent to "BBABA") and the empty set (that is "AAAAA"), so removing these leads to $\frac{2^n}{2}-1$. That is, in our case we would have to analyze $2^{5-1}-1=15$ splits.
-
-This number grows exponentially large with the cardinality of $C$, making considering all possible splits not an options even for medium-sized sets $C$. Hence one has to apply some heuristics to find a good solution. There are of course several valid ideas here.
-
-One such heuristic, based on ideas from Macnaughton-Smith et al (1964) is called DIANA (from DIvisive
-ANAlysis) and it works as follows: First single out the single element to form a cluster of its own, such that the cluster distance to the other elements is maximized. Then elementwise grow this cluster. This will give the first split into two clusters $A$ and $B$. Then recursively apply this procedure to the resulting clusters.
-
-In our example, this strategy works as follows: First we find one element $\{a,b,c,d,e\}$ such that the cluster distance (according to the $d_{mean}$ metric) to the remaining elements is maximized:
- 
-|  $S_1$  |  $C_1$        |  $d_{mean}(S_1,C_1)$                   |
-|---------|---------------|----------------------------------------|
-| $\{a\}$ | $\{b,c,d,e\}$ |  $(2  + 6 + 10 + 9)/4 = \mathbf{6.75}$ |
-| $\{b\}$ | $\{a,c,d,e\}$ |  $(2  + 5 +  9 + 8)/4 = 6.00$          |
-| $\{c\}$ | $\{a,b,d,e\}$ |  $(6  + 5 +  4 + 5)/4 = 5.00$          |
-| $\{d\}$ | $\{a,b,c,e\}$ |  $(10 + 9 +  4 + 3)/4 = 6.50$          |
-| $\{e\}$ | $\{a,b,c,e\}$ |  $(9  + 8 +  5 + 3)/4 = 6.24$          |
-
-So the singleton $S_1=\{a\}$ has the largest distance to the other elements. Now repeat this, finding the next single element from $C_1$ that maximizes the distance to the remaining elements:
-
-|  $S_2$  |  $C_2$      | $d_{mean}(S_2,C_2)$      | $d_{mean}(S_2,S_1)$ | $d_{mean}(S_2,C_2)-d_{mean}(S_2,S_1)$ | 
-|---------|-------------|--------------------------|---------------------|-----------------------------|
-| $\{b\}$ | $\{c,d,e\}$ | $(5+9+8)/3 \approx 7.33$ | $2.00$              | $\mathbf{5.33}$             |
-| $\{c\}$ | $\{b,d,e\}$ | $(5+4+5)/3 \approx 4.67$ | $6.00$              | $-1.33$                     |
-| $\{d\}$ | $\{b,c,e\}$ | $(9+4+3)/3 \approx 5.33$ | $10.00$             | $-4.67$                     |
-| $\{e\}$ | $\{b,c,e\}$ | $(8+5+3)/3 \approx 5.33$ | $9.00$              | $-3.67$                     |
-
-So element $b$ should be clustered together with element $a$. Now repeat this procedure for the remaining three element $\{c,d,e\}$:
-
-|  $S_3$  |  $C_3$    | $d_{mean}(S_3,C_3)$ | $d_{mean}(S_3,S_2)$ | $d_{mean}(S_3,C_3)-d_{mean}(S_2,S_2)$ | 
-|---------|-----------|---------------------|---------------------|---------------------------------------|
-| $\{c\}$ | $\{d,e\}$ | $(4+5)/2 = 4.50$    | $(6+5)/2=5.50$      | $-1.00$                               |
-| $\{d\}$ | $\{c,e\}$ | $(4+3)/2 = 3.50$    | $(10+9)/2=9.50$     | $-6.00$                               |
-| $\{e\}$ | $\{c,e\}$ | $(5+3)/2 = 4.00$    | $(9+8)/2=8.50$      | $-4.5$                                |
-
-Now all differences are negative, meaning that moving a further element from $\{c,d,e\}$ to $\{a,b\}$ will not give an improvement. Hence in the first split we split the set $C=\{a,b,c,d,e\}$ into the two clusters
-$A=\{a,b\}$ and $B=\{c,d,e\}$. Now recursively apply this procedure to $A$ and $B$, starting with the cluster with the largest diameter (highest maximal distance between its objects). The diameter of $A$ is $2$ and for $B$ it is $5$. Applying the procedure to $B$ will result in the clusters $\{c\}$ and $\{d,e\}$, the diameter of $\{d,e\}$ being $3$. Hence one first splits the set into $\{d\}$ and $\{e\}$ and then $A$ into $\{a\}$ and $\{b\}$.
-
-```
-
-              {a,b,c,d,e}
-                   |
-        +----------+------------+
-        |                       |
-        |                    {c,d,e} D=5
-        |                       |
-        |                +------+------+
-        |                |             |
-        |                |           {d,e} D=3
-        |                |             |
-      {a,b} D=2          |        +----+----+
-        |                |        |         |
-    +-------+            |        |         |
-    |       |            |        |         |
-   {a}     {b}          {c}      {d}       {e}
-```
-
-* Macnaughton-Smith, P., Williams, W. T., Dale, M. B. , and Mockett, L. G. (1964), *Dissimilarity analysis: A new technique of hierarchical sub-division*, Nature, 202, 1034-1035.
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": false, "grade_id": "2", "locked": true, "schema_version": 3, "solution": false} -->
 ## c) Linkage criteria
 
 In the following you find implementations for single- and complete-linkage clustering. Take a look at the code  and answer the question posted below. You may of course change parameters and try it out on different datasets (`points.txt` & `clusterData.txt` are provided).
