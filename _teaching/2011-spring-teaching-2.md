@@ -4,7 +4,7 @@ collection: teaching
 type: "Image Processing "
 permalink: /teaching/2011-spring-teaching-2
 venue: " University of Applied Science and Technology"
-date: 2013-01-01
+date: 2016-01-01
 location: "Lorestan, Iran"
 ---
  
