@@ -20,100 +20,21 @@ In this course, we had different topics in machine learning:
   
 Clustering
 ======
----
-jupyter:
-  jupytext:
-    text_representation:
-      extension: .Rmd
-      format_name: rmarkdown
-      format_version: '1.2'
-      jupytext_version: 1.14.5
-  kernelspec:
-    display_name: Python 3 (ipykernel)
-    language: python
-    name: python3
----
 
 <!-- #region nbgrader={"grade": false, "grade_id": "h00", "locked": true, "schema_version": 3, "solution": false} -->
 Osnabrück University - Machine Learning (Summer Term 2023) - Prof. Dr.-Ing. G. Heidemann, Ulf Krumnack, Leila Malihi
 <!-- #endregion -->
 
 <!-- #region nbgrader={"grade": false, "grade_id": "heading", "locked": true, "schema_version": 3, "solution": false} -->
-# Exercise Sheet 04: Clustering
+# Exercise Sheet: Clustering
 <!-- #endregion -->
 
 <!-- #region nbgrader={"grade": false, "grade_id": "intro", "locked": true, "schema_version": 3, "solution": false} -->
 ## Introduction
 
-This week's sheet should be solved and handed in before the end of **Sunday, May 14, 2023**. If you need help (and Google and other resources were not enough), use the StudIP forum, contact your groups designated tutor or whomever of us you run into first. Please upload your results to your group's Stud.IP folder.
-
 In the following tasks we will be relying on numpy. Using the following import we expect it to be in global scope as `np`. Therefore we can, after executing the following cell, use stuff like `np.array` and `np.sqrt`. Check out the [NumPy Reference](http://docs.scipy.org/doc/numpy/reference/index.html) and especially search it using e.g. [Google Site Search](https://www.google.de/search?q=array+site%3Adocs.scipy.org%2Fdoc%2Fnumpy)! You can also try `np.lookfor('keyword search docstrings')` to get help.
-<!-- #endregion -->
 
-```{python nbgrader={'grade': True, 'grade_id': 'cell-e5fb2c4ae7785602', 'locked': False, 'points': 0, 'schema_version': 3, 'solution': True, 'task': False}}
-import numpy as np
-np.lookfor('get array diagonal')
-
-# Try other queries here
-### BEGIN SOLUTION
-### END SOLUTION
-```
-
-<!-- #region nbgrader={"grade": false, "grade_id": "cell-0ceaa7378e4a713d", "locked": true, "schema_version": 3, "solution": false} -->
-# Assignment 0: Math recap (Eigenvectors and Eigenvalues) [0 Points]
-
-This exercise does not give any points, and is voluntary. There will be a similar exercise on every sheet. It is intended to revise some basic mathematical notions that are assumed throughout this class and to allow you to check if you are comfortable with them. Eigenvectors and eigenvalues may be less familiar, so this may be a good time to look them up again (you will only need the basic concepts, you do not have to know how to actually compute them for this class). You are always welcome to discuss questions with the tutors or in the practice session. Also, if you have a (math) topic you would like to recap, please let us know.
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": false, "grade_id": "cell-106b918b6f9c6fea", "locked": true, "schema_version": 3, "solution": false} -->
-## a) Eigenvectors and eigenvalues
-
-What is an eigenvector of a matrix/a linear mapping? What are eigenvalues?
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": true, "grade_id": "cell-f80e2cfbc5dae96a", "locked": false, "points": 0, "schema_version": 3, "solution": true} solution=true -->
-Mapping (i.e. multiplying with the matrix) an eigenvector will result a scaled version of that vector, i.e. it may change length and orientation, but not its direction in space. Formally, an eigenvector $v$ fulfills
-$$A\cdot v=\lambda v\qquad\text{for some scalar $\lambda\in\mathbb{R}$}$$
-The scalar $\lambda$ is called the eigenvalue belonging to the eigenvector $v$.
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": false, "grade_id": "cell-10c6f038150609e1", "locked": true, "schema_version": 3, "solution": false} -->
-## b) Characteristic polynomial
-
-What is the characteristic polynomial of a matrix? How is it related to eigenvalues? What are algebraic and geometric multiplicity of an eigenvalue?
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": true, "grade_id": "cell-c45db6ae30a5507a", "locked": false, "points": 0, "schema_version": 3, "solution": true} solution=true -->
-The characteristic polynomial of a $n\times n$-matrix $A$ is defined as
-$$p_A(X) = \det(X\cdot\mathbf{I}_n-A)$$
-where $\mathbf{I}_n$ is the identity matrix and $\det$ the determinant. It is a polynomial of degree $n$, that is invariant under matrix similarity. The roots of the characteristic polynomial are the eigenvalues of the matrix.
-The algebraic multiplicity of an eigenvalue $\lambda$ is its multiplicity as a root of the characteristic polynomial.
-
-For every eigenvalue, there may be multiple eigenvectors, that span a subspace called the eigenspace for that eigenvector. The geometric multiplicity of an eigenvalue is the dimension of the corresponding eigenspace. The geometric multiplicity cannot exceed the algebraic multiplicity.
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": false, "grade_id": "cell-7822385798587c45", "locked": true, "schema_version": 3, "solution": false} -->
-## c) Spectrum
-
-What is the spectrum of a matrix? What does the spectral theorem state?
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": true, "grade_id": "cell-1a5e17baf68e02e1", "locked": false, "points": 0, "schema_version": 3, "solution": true} solution=true -->
-The spectrum of a matrix is the set of its eigenvalues. The spectral theorem states under which conditions there is diagonalization and provides a cannonical decomposition, referred to es eigendecomposition. For example every real symmetric square matrix is diagonalizable. The diagonalization $A=VDV^T$ consists of a diagonal matrix having the eigenvalues in the diagonal and the matrix $V$ has the corresponding eigenvectors as columns.
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": false, "grade_id": "math-eigen-q4", "locked": true, "schema_version": 3, "solution": false} -->
-## d) Numpy/Scipy [bonus task]
-
-Numpy/Scipy provide functions to compute eigenvalues. Lookup these functions and apply them to an example.
-<!-- #endregion -->
-
-```{python nbgrader={'grade': True, 'grade_id': 'cell-2400c166c6ecc90d', 'locked': False, 'points': 0, 'schema_version': 3, 'solution': True}}
-
-```
-
-<!-- #region nbgrader={"grade": false, "grade_id": "1", "locked": true, "schema_version": 3, "solution": false} -->
-# Assignment 1: Distance Measures for Clusters (4 points)
+# Assignment 1: Distance Measures for Clusters 
 <!-- #endregion -->
 
 <!-- #region nbgrader={"grade": false, "grade_id": "1_ax", "locked": true, "schema_version": 3, "solution": false} -->
@@ -136,10 +57,7 @@ Clusters are collections of points. The distance of two clusters can be derived 
 <!-- #endregion -->
 
 <!-- #region nbgrader={"grade": true, "grade_id": "cell-d8619b5b4e63d573", "locked": false, "points": 2, "schema_version": 3, "solution": true, "task": false} -->
-The $D_{\text{centroid}}$ first computes the center of each cluster and then computes the distance of these centers. Hence it can only be applied to clusters that allow to compute such a center (e.g. clusters of points in a euclidean space), while the $D_{\text{mean}}$ metric can be applied to clusters of points in a general metric space (where it is possible to measure the distance of datapoints, but not necessarily to obtain a cluster center). For clusters $X$ and $Y$ the following holds:
-
-* $D_{\text{mean}}$ has complexity $O(|X|\cdot|Y|)$: Compute the sum of the distances of all pairs from $(x,y)$ There exist $|X|\cdot|Y|$ such pairs (actually you only need half of it, as the distance is symmetric, but this does not change the order of complexity). So you have to compute $O(|X|\cdot|Y|)$ distances (the complexity of this operation depends on the distance measure applied) and add up the $O(|X|\cdot|Y|)$ values.
-* $D_{\text{centroid}}$ has complexity $O(|X|+|Y|)$: compute the mean of each cluster, which amounts to summing up $|X|$ vectors for cluster $X$ and $|Y|$ vectors for cluster $Y$ - again the complexity of summing vectors depends on the type of vectorspace you consider, it will usually depend directly on its dimensionality.
+The $D_{\text{centroid}}$ first computes the center of each cluster and then computes the distance of these centers. Hence it can only be applied to clusters that allow to compute such a center (e.g. clusters of points in a euclidean space), while the $D_{\text{mean}}$ metric can be applied to clusters of points in a general metric space (where it is possible to measure the distance of datapoints, but not necessarily to obtain a cluster center). 
 
 
 
@@ -185,13 +103,6 @@ Now implement the $d_{mean}$ and $d_{centroid}$ distance from the lecture. Each 
 Hint: you may consider using the function `scipy.spatial.distance.cdist`. Consult the documentation to find out how to use it.
 <!-- #endregion -->
 
-```{python nbgrader={'grade': True, 'grade_id': '1_b_code', 'locked': False, 'points': 1, 'schema_version': 3, 'solution': True}}
-from scipy.spatial.distance import cdist
-import numpy as np
-
-def d_mean(cluster1, cluster2):
-    """
-    Mean distance between points of two clusters.
    
     Args:
         cluster1 (ndarray): Points belonging to cluster 1 of shape (num_points, num_dimensions).
@@ -204,15 +115,7 @@ def d_mean(cluster1, cluster2):
     return cdist(cluster1, cluster2).mean()
     ### END SOLUTION
 
-x = np.array([[1,2,3], [4,5,6], [7,8,9]])
-y = np.array([[13,14,15], [16,17,18], [19,20,21], [5,45,1], [1,12,7]])
 
-epsilon = 1e-3
-assert abs(d_mean(x, y) - 22.297) < epsilon, "Result is not correct: {}".format(d_mean(x, y))
-assert d_mean(x, y) == d_mean(y, x), "X,Y is not equal to Y,X: {} != {}".format(d_mean(x, y), d_mean(y, x))
-```
-
-```{python nbgrader={'grade': True, 'grade_id': '1_c_code', 'locked': False, 'points': 1, 'schema_version': 3, 'solution': True}}
 def d_centroid(cluster1, cluster2):
     """
     Calculate the distance between the centroids of two clusters.
@@ -243,7 +146,8 @@ assert d_centroid(x, y) == d_centroid(y, x), "X,Y is not equal to Y,X: {} != {}"
 ```
 
 <!-- #region nbgrader={"grade": false, "grade_id": "cell-1aa3a155692767cb", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
- # Assignment 2: Hierarchical Clustering (5 points)
+
+ ## Hierarchical Clustering
  
  Consider the following matrix of distances
  
@@ -386,12 +290,7 @@ In the following you find implementations for single- and complete-linkage clust
 Note that for performance reasons the code differs from the lecture's pseudocode (ML-05 Slide 8), but in general it does the same.
 <!-- #endregion -->
 
-```{python nbgrader={'grade': False, 'grade_id': 'cell-bece3476fa1da0d2', 'locked': True, 'schema_version': 3, 'solution': False, 'task': False}}
-from scipy.spatial.distance import cdist
 
-def linkage(data, k=5, complete=False):
-    """
-    Runs single or complete linkage clustering.
     
     Args:
         data (ndarray): Data points to be clustered in an array with shape (num_points, 2).
@@ -439,65 +338,7 @@ def linkage(data, k=5, complete=False):
     return labels
 ```
 
-```{python nbgrader={'grade': True, 'grade_id': 'cell-88337d69614d2e22', 'locked': False, 'points': 0, 'schema_version': 3, 'solution': True, 'task': False}}
-# %matplotlib inline
-import numpy as np
-import matplotlib.pyplot as plt
 
-# Read the data.
-data = np.loadtxt('points.txt')
-
-# Show unprocessed data set.
-fig_cluster = plt.figure()
-plt.scatter(data[:, 0], data[:, 1])
-plt.title('Unprocessed Cluster Data')
-fig_cluster.canvas.draw()
-
-# Apply Single Linkage Clustering
-labels = linkage(data, k=5, complete=False)
-unique, inverse, counts = np.unique(labels, return_inverse=True, return_counts=True)
-print("Single Linkage Clustering:")
-# Print the unqiue labels and their occurence
-for u, c in zip(unique, counts):
-    print("Label: {:4},  Occurence: {:4}".format(u, c))    
-# Replace labels by continuous values starting from 1 for discernible colors in plot
-labels = np.arange(1,unique.size+1)[inverse]
-fig_single = plt.figure()
-plt.scatter(data[:, 0], data[:, 1], c=labels)
-plt.title('Single-linkage Clustering with k=5')
-fig_single.canvas.draw()
-
-
-# Apply Complete Linkage Clustering
-labels = linkage(data, k=5, complete=True)
-unique, inverse, counts = np.unique(labels, return_inverse=True, return_counts=True)
-print("Complete Linkage Clustering:")
-for u, c in zip(unique, counts):
-    print("Label: {:4},  Occurence: {:4}".format(u, c))    
-labels = np.arange(1,unique.size+1)[inverse]
-fig_complete = plt.figure()
-plt.scatter(data[:, 0], data[:, 1], c=labels)
-plt.title('Complete-linkage Clustering with k=5')
-fig_complete.canvas.draw()
-
-# Test different parameters above
-### BEGIN SOLUTION
-### END SOLUTION
-```
-
-<!-- #region nbgrader={"grade": false, "grade_id": "2_question", "locked": true, "schema_version": 3, "solution": false} -->
-What is the difference between single- and complete-linkage clustering and which is the better solution given the dataset?
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": true, "grade_id": "2_answer", "locked": false, "points": 2, "schema_version": 3, "solution": true} -->
-Single-linkage tends to chain clusters along the data. That is why it combines the points in the center area with those in the bottom right corner.
-
-Complete-linkage prefers compact clusters and thus combines each of the point heavy areas individually without merging them.
-
-For this dataset, complete-linkage is superior.
-<!-- #endregion -->
-
-<!-- #region nbgrader={"grade": false, "grade_id": "cell-03251c978769cd79", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
 # Assignment 3: Kmeans Clustering (5 points)
 <!-- #endregion -->
 
