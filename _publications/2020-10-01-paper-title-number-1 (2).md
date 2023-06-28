@@ -1,7 +1,6 @@
 ---
 title: "Design of wide band Microstrip-line-fed antenna with circular
-polarization at ISM band for biomedical applications, 10th International Conference
-on Information Technology"
+polarization at ISM band for biomedical applications"
 collection: publications
 permalink: /publication/2020-10-01-paper-title-number-1(2) 
 excerpt: 'In this paper, a new wide band Micro strip antenna for implantable biomedical application in the
@@ -18,8 +17,7 @@ venue: '10th International Conference
 on Information Technology'
 paperurl: 'http://leilamalihi.github.io/files/paper.pdf'
 citation: 'Your Name, You. (2009). &quot;Design of wide band Microstrip-line-fed antenna with circular
-polarization at ISM band for biomedical applications, 10th International Conference
-on Information Technology&quot; <i>10th International Conference
+polarization at ISM band for biomedical applications&quot; <i>10th International Conference
 on Information Technology</i>. 1(1).'
 ---
 In this paper, a new wide band Micro strip antenna for implantable biomedical application in the
@@ -35,6 +33,5 @@ several implantable applications.
 [Download paper here](http://leilamalihi.github.io/files/paper.pdf)
 
 Recommended citation: Your Name, You. (2009). "Design of wide band Microstrip-line-fed antenna with circular
-polarization at ISM band for biomedical applications, 10th International Conference
-on Information Technology." <i>10th International Conference
+polarization at ISM band for biomedical applications" <i>10th International Conference
 on Information Technology</i>. 1(1).
