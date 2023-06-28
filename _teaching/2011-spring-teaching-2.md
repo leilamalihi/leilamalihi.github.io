@@ -8,6 +8,7 @@ date: 2016-01-01
 location: "Lorestan, Iran"
 ---
  
+Image processing refers to the manipulation and analysis of digital images using algorithms and techniques to extract meaningful information or enhance the visual quality of images. It is a multidisciplinary field that combines concepts from computer science, mathematics, and signal processing.
 In this course I started with an introduction to digital image processing, covering the basic concepts, applications, and components of an image processing system.
 
 - Image Enhancement:
