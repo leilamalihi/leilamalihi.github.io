@@ -1,6 +1,6 @@
 ---
-title: "Teaching Osnabrück university"
-collection: teaching
+title: "Advanced topics in deep learning"
+collection: Teaching
 type: "Advanced topics in deep learning"
 permalink: /teaching/2014-spring-teaching-1
 venue: "Osnabrück university, Computer vision group"
