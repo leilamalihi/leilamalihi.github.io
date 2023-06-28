@@ -1,7 +1,7 @@
 ---
 title: "Machine learning"
 collection: teaching
-type: "Teaching Practice section"
+type: "Machine learning "
 permalink: /teaching/2015-spring-teaching-1
 venue: "Osnabrück university, Cognitive sceince, Computer vision group"
 date: 2023-01-01
