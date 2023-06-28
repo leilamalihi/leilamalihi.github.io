@@ -39,6 +39,6 @@ The book covers techniques for recognizing and classifying objects in images. It
 
 In addition to these main topics, the book also covers topics such as image analysis, image understanding, image registration, and image-based measurements.
 
-Overall, "Digital Image Processing" provides a comprehensive introduction to the field, covering both fundamental principles and advanced techniques. The book is widely used as a textbook in universities and is known for its clear explanations, examples, and MATLAB-based exercises to reinforce the concepts presented [Reference](https://sde.uoc.ac.in/sites/default/files/sde_videos/Digital%20Image%20Processing%203rd%20ed.%20-%20R.%20Gonzalez,%20R.%20Woods-ilovepdf-compressed.pdf).
+Overall, "Digital Image Processing" provides a comprehensive introduction to the field, covering both fundamental principles and advanced techniques. The book is widely used as a textbook in universities and is known for its clear explanations, examples, and MATLAB-based exercises to reinforce the concepts presented [Reference](https://sde.uoc.ac.in/sites/default/files/sde_videos/Digital%20Image%20Processing%203rd%20ed.%20-%20R.%20Gonzalez,%20R.%20Woods-ilovepdf-compressed.pdf).[Certificate](/files/bojan)
 
 
