@@ -18,5 +18,3 @@ Similarity learning
 ======
 Similarity learning, also known as metric learning, is a subfield of machine learning that focuses on learning a function that measures the similarity or dissimilarity between data samples. The goal of similarity learning is to transform the data into a new representation where similar samples are mapped closer together while dissimilar samples are mapped farther apart.You can see the slides [here](/files/similarity learning.pdf).
 
-Heading 3
-======
