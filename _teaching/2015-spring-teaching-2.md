@@ -272,8 +272,7 @@ It is not even clear, that the steps of the algorithm do decrease (is it possibl
 
 
 <!-- #region nbgrader={"grade": false, "grade_id": "cell-fa945b11f93016c4", "locked": true, "schema_version": 3, "solution": false, "task": false} -->
-## b) Why might the clustering for k=7 not look optimal? 
-What happens if you run the algorithm several times?
+## b) Why might the clustering for k=7 not look optimal? What happens if you run the algorithm several times?
 <!-- #endregion -->
 
 <!-- #region nbgrader={"grade": true, "grade_id": "cell-16925a76b18a76fe", "locked": false, "points": 1, "schema_version": 3, "solution": true, "task": false} -->
