@@ -277,9 +277,6 @@ It is not even clear, that the steps of the algorithm do decrease (is it possibl
 
 <!-- #region nbgrader={"grade": true, "grade_id": "cell-16925a76b18a76fe", "locked": false, "points": 1, "schema_version": 3, "solution": true, "task": false} -->
 K-Means works best for datasets in which clusters have the same circular shape and the same amount of datapoints per cluster. Opposed to a Mixture of Gaussians, in which the different distributions/clusters are weighted and the standard deviations may differ between distributions and also between different dimensions, in K-Means the variance is fixed and the same metric is used for all clusters. 
-
-In this example inter- and intra cluster variance varies together with the number of datapoints per cluster.
-
 Moreover, the outcome of K-Means is a local minima, depending on the random initialization of the cluster centers. This local minimal may not be the global optimum.
 <!-- #endregion -->
 
