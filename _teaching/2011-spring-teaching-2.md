@@ -16,10 +16,10 @@ In this course I started with an introduction to digital image processing, cover
 - Image Restoration:
 This section focuses on restoring degraded images, including techniques for noise removal, image deblurring, and image reconstruction from projections.
 
-Color Image Processing: 
+- Color Image Processing: 
 The book discusses color representation, color models, and various color image processing operations such as color transformations, color image enhancement, and color image segmentation.
 
-Wavelets and Multiresolution Processing:
+- Wavelets and Multiresolution Processing:
 This topic introduces wavelet transforms and their applications in image processing. It covers multiresolution analysis, wavelet decomposition, wavelet-based denoising, and compression.
 
 - Image Compression: 
