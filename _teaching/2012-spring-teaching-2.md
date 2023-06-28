@@ -7,7 +7,7 @@ venue: "Payamenur university,Electronic"
 date: 2017-01-01
 location: "Lorestan, Iran"
 ---
-
+Electronic and electrical measurement refers to the process of quantitatively assessing various electrical parameters and characteristics in electronic systems and devices. It involves the use of measurement instruments and techniques to obtain accurate and reliable data for analysis, verification, and troubleshooting. 
 
 ## Headlines of Electronic :
 
