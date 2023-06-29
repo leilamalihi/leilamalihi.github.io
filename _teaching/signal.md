@@ -7,7 +7,7 @@ venue: " University of Applied Science and Technology"
 date: 2016-01-01
 location: "Lorestan, Iran"
 ---
-Signals and systems are fundamental concepts in the field of electrical engineering and signal processing. They involve the study of how signals are generated, transmitted, processed, and analyzed. 
+Signals and systems are fundamental concepts in the field of electrical engineering and signal processing. They involve the study of how signals are generated, transmitted, processed, and analyzed. In this course, I had the folowwing topics:
 # Headlines: 
 ## Introduction to Signals and Systems
 
