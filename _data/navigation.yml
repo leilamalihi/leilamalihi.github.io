@@ -1,4 +1,4 @@
-# main links links
+ts# main links links
 main:
   - title: "CV"
     url: /files/CV Leila Malihi-research 4 without number (8).pdf
@@ -15,7 +15,8 @@ main:
   - title: "Blog Posts"
     url: /year-archive/
     
- 
+   - title: "Projects"
+    url: /portfolio/
     
  # - title: "Guide"
   #  url: /markdown/
