@@ -14,5 +14,5 @@ collection: portfolio
 - Color histogram, granulometry, gradient and flat texture features are extracted
 - Different classifires and combination methods applied [(Refer to my paper)](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6780011)
 ![Real Or Synthetic](/images/tablem.png)
-*[From My paper](https://brieflands.com/articles/jjhs-15009.pdf)the results for detecting malaria parasite using Classifier
+*[From My paper](https://brieflands.com/articles/jjhs-15009.pdf) the results for detecting malaria parasite using Classifier
 Fusion*
