@@ -14,6 +14,7 @@ Chronic wounds are ulcerations of the skin that fail to heal because of an under
  - The wound part hilighted by Grad-cam.[(Refer to my paper)](https://pubmed.ncbi.nlm.nih.gov/35773863/)
 
   ![Real Or Synthetic](/images/compare.png)
+  
       $Comparing$ $the$ $results$ , $dfu$ $means$ $dayabetic$ $and$ $ucv$ $means$ $venous$
     
  ---
