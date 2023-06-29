@@ -1,6 +1,6 @@
 ---
 title: "Klix"
-excerpt: "Develop an application for image rights management <br/><img src='/images/face.png'>"
+excerpt: "Develop an application for image rights management <br/><img src='/images/klix_small.png'>"
 collection: portfolio
 ---
 - In [klix](https://www.ikw.uni-osnabrueck.de/research_groups/computer_vision/research/klix.html) project, we proposed a novel dataset ”Labeled Children in the Wild” (LCW) for facial recognition tasks, that features are more challenging (high variance) for modern face recognition solutions and freely available.
