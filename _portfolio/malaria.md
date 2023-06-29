@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "ZIEL"
+excerpt: "Wound classification and Generating <br/><img src='/images/Sc.png'>"
 collection: portfolio
 ---
 Can AI detect the Wound part?
