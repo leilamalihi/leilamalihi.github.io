@@ -1,6 +1,6 @@
 ---
 title: " Malaria parasite detection"
-excerpt: "Malaria Parasite detection <br/><img src='/images/malaria.jpeg'>"
+excerpt: "Computer Vision Detection of Malaria Parasite <br/><img src='/images/malaria.jpeg'>"
 collection: portfolio
 ---
 
