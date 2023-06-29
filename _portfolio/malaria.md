@@ -1,6 +1,6 @@
 ---
 title: "ZIEL"
-excerpt: "Wound Identification and Generating <br/><img src='/images/Sc.png'>"
+excerpt: "Wound Identification and Generating <br/><img src='/images/ziel.png'>"
 collection: portfolio
 ---
 Can AI detect the Wound part?
