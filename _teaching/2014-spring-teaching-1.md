@@ -3,7 +3,7 @@ title: "Advanced topics in deep learning"
 collection: Teaching
 type: "Advanced topics in deep learning"
 permalink: /teaching/2014-spring-teaching-1
-venue: "Undergraduate courses, Osnabrück university, Department of Computer vision"
+venue: "Graduate courses, Osnabrück university, Department of Computer vision"
 date: 2021-01-01
 location: "Osnabrück"
 ---
