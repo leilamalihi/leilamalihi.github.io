@@ -1,9 +1,9 @@
 ---
 title: "Machine learning"
 collection: teaching
-type: "Machine learning "
+type: "Graduate Courses"
 permalink: /teaching/2015-spring-teaching-1
-venue: "Osnabrück university, Cognitive sceince, Computer vision group"
+venue: " Osnabrück university, Cognitive sceince, Computer vision group"
 date: 2023-01-01
 location: "Osabrück, Germany"
 ---
