@@ -3,7 +3,7 @@ title: "Signals and System"
 collection: teaching
 type: "Undergraduate Courses"
 permalink: /teaching/signal
-venue: " University of Applied Science and Technology"
+venue: " University of Applied Science and Technology, Department of Electronic"
 date: 2016-01-01
 location: "Lorestan, Iran"
 ---
