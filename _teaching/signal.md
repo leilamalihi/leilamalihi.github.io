@@ -1,7 +1,7 @@
 ---
 title: "Signals and System"
 collection: teaching
-type: "Signals and System"
+type: "Undergraduate Courses"
 permalink: /teaching/signal
 venue: " University of Applied Science and Technology"
 date: 2016-01-01
