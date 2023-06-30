@@ -1,9 +1,9 @@
 ---
 title: "Image Processing"
 collection: teaching
-type: "Image Processing "
+type: "Undergraduate courses"
 permalink: /teaching/2011-spring-teaching-2
-venue: " Undergraduate courses, University of Applied Science and Technology, Department of Electronic"
+venue: " University of Applied Science and Technology, Department of Electronic"
 date: 2016-01-01
 location: "Lorestan, Iran"
 ---
