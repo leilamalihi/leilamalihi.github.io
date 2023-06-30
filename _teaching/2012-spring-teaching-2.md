@@ -1,9 +1,9 @@
 ---
 title: "Electronic & Electrical Measurement"
 collection: teaching
-type: "Electronic"
+type: "Undergraduate courses"
 permalink: /teaching/2012-spring-teaching-2
-venue: "Undergraduate courses, Payamenur university, Facualty of Electronic "
+venue: " Payamenur university, Facualty of Electronic "
 date: 2017-01-01
 location: "Lorestan, Iran"
 ---
