@@ -1,7 +1,7 @@
 ---
 title: "Matlab Programming"
 collection: teaching
-type: "Matlab "
+type: "Undergraduate courses"
 permalink: /teaching/2019-spring-teaching-2
 venue: "Academic Center for Education"
 date: 2019-01-01
